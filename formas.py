@@ -4,8 +4,6 @@
 # 7 - trapezios
 # python3 formas.py
 
-#   print ("4 - Retângulo")
-#   print ("5 - Paralelogramo")
 #   print ("6 - Losango")
 #   print ("7 - Trapézios")
 #   print ("0 - Sair")
@@ -30,7 +28,11 @@ def Paralelogramo():
      base = int (input ("qual a base do Paralelogramo? "))
     altura = int (input ("qual a altura do Paralelogramo? "))
     print (f"A área do Paralelogramo é: {base * altura}")
-
+def Losango():
+    diagonalmaior = int (input ("qual a diagonal maior do losango? "))
+    diagonalmenor = int (input ("qual a diagonal menor do losango? "))
+    calculo = diagonalmaior * diagonalmenor
+    print (f"A área do Losango é: {calculo / 2}")
 
 while True: 
     print ("CALCULADORA")
@@ -39,6 +41,7 @@ while True:
     print ("3 - Quadrado")
     print ("4 - Retângulo")
     print ("5 - Paralelogramo")
+    print ("6 - Losango")
     print ("0 - Sair")
 
     opcao = input ("Escolha uma opção: ")
@@ -53,6 +56,8 @@ while True:
         Retângulo()
     elif opcao "5":
         Paralelogramo()
+    elif opcao "6":
+        Losango()
     elif opcao == "0":
         print ("Saindo do sistema...")
         break
