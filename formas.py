@@ -1,5 +1,4 @@
 
-# 4 - retangulo
 # 5 - paralelogramo
 # 6 - losango
 # 7 - trapezios
@@ -27,7 +26,10 @@ def Retângulo():
     base = int (input ("qual a base do Retângulo? "))
     altura = int (input ("qual a altura do Retângulo? "))
     print (f"A área do Retângulo é: {base * altura}")
-
+def Paralelogramo():
+     base = int (input ("qual a base do Paralelogramo? "))
+    altura = int (input ("qual a altura do Paralelogramo? "))
+    print (f"A área do Paralelogramo é: {base * altura}")
 
 
 while True: 
@@ -36,6 +38,7 @@ while True:
     print ("2 - Triângulo")
     print ("3 - Quadrado")
     print ("4 - Retângulo")
+    print ("5 - Paralelogramo")
     print ("0 - Sair")
 
     opcao = input ("Escolha uma opção: ")
@@ -48,6 +51,8 @@ while True:
         Quadrado()
     elif opcao == "4":
         Retângulo()
+    elif opcao "5":
+        Paralelogramo()
     elif opcao == "0":
         print ("Saindo do sistema...")
         break
