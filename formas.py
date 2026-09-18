@@ -1,12 +1,5 @@
-
-# 5 - paralelogramo
-# 6 - losango
-# 7 - trapezios
 # python3 formas.py
 
-#   print ("6 - Losango")
-#   print ("7 - Trapézios")
-#   print ("0 - Sair")
 
 def Circulo():
     raio = int (input ("qual o Raio do circulo? "))
@@ -25,7 +18,7 @@ def Retângulo():
     altura = int (input ("qual a altura do Retângulo? "))
     print (f"A área do Retângulo é: {base * altura}")
 def Paralelogramo():
-     base = int (input ("qual a base do Paralelogramo? "))
+    base = int (input ("qual a base do Paralelogramo? "))
     altura = int (input ("qual a altura do Paralelogramo? "))
     print (f"A área do Paralelogramo é: {base * altura}")
 def Losango():
@@ -33,6 +26,13 @@ def Losango():
     diagonalmenor = int (input ("qual a diagonal menor do losango? "))
     calculo = diagonalmaior * diagonalmenor
     print (f"A área do Losango é: {calculo / 2}")
+def Trapézio():
+    basemaior = int (input ("qual a base maior do Trapézio? "))
+    basemenor = int (input ("qual a base menor do Trapézio? "))
+    altura = int (input ("qual a altura do Trapézio? "))
+    calculo1 = basemaior + basemenor
+    calculo2 = calculo1 * altura
+    print (f"A área do Losango é: {calculo2 / 2}")
 
 while True: 
     print ("CALCULADORA")
@@ -42,6 +42,7 @@ while True:
     print ("4 - Retângulo")
     print ("5 - Paralelogramo")
     print ("6 - Losango")
+    print ("7 - Trapézio")
     print ("0 - Sair")
 
     opcao = input ("Escolha uma opção: ")
@@ -54,10 +55,12 @@ while True:
         Quadrado()
     elif opcao == "4":
         Retângulo()
-    elif opcao "5":
+    elif opcao == "5":
         Paralelogramo()
-    elif opcao "6":
+    elif opcao == "6":
         Losango()
+    elif opcao == "7":
+        Trapézio()
     elif opcao == "0":
         print ("Saindo do sistema...")
         break
