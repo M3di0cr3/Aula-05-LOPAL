@@ -1,6 +1,3 @@
-# python3 formas.py
-
-
 def Circulo():
     raio = int (input ("qual o Raio do circulo? "))
     raio = raio * raio
